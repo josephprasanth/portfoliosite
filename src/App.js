@@ -6,7 +6,13 @@ class App extends Component {
     this.state = {
       displayBio: false
     };
+    this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
   }
+
+  toggleDisplayBio() {
+    this.setState({ displayBio: !this.state.displayBio });
+  }
+
   render() {
     return (
       <div>
@@ -21,9 +27,12 @@ class App extends Component {
               awesome
             </p>
             <p>Besides coding I also love solving tangrams </p>
+            <button onClick={this.toggleDisplayBio}> ReadLess</button>
           </div>
         ) : (
-          (this.bio = null)
+          <div>
+            <button onClick={this.toggleDisplayBio}>Read More</button>
+          </div>
         )}
       </div>
     );
