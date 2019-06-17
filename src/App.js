@@ -19,8 +19,8 @@ class App extends Component {
           <div>
             <p>I am currently residing in Stockholm</p>
             <p>
-              My favourite language is Javascript and I think React.js is
-              awesome
+              My favourite language is Javascript and I beleive React.js is
+              the future
             </p>
             <p>Besides coding I also love solving tangrams </p>
             <button onClick={this.toggleDisplayBio}> ReadLess</button>
